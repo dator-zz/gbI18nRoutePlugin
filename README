@@ -1,0 +1,58 @@
+# gbI18nRoutePlugin plugin
+
+## Overview
+
+The `gbI18nRoutePlugin` is a symfony plugin that provides internationalization
+in the URL.
+
+It give you the possibility to generate URL based on the user language and on
+the request route the URL to the right module/action with the correct language.
+
+## Installation
+
+1.Download and install the plugin
+
+1.1 Using the Symfony plugin installation task:
+
+    ./symfony plugin:install gbI18nRoutePlugin --stability=beta
+
+1.2 Using the svn version
+
+    cd plugins
+    svn co http://svn.symfony-project.com/plugins/gbI18nRoutePlugin
+
+## Configuration
+
+1.Enable the plugin into your ProjectConfiguration
+
+Edit your application *config/ProjectConfiguration.class.php* to enable the gbI18nRoute plugin, and add the line below in the setup function
+
+    $this->enablePlugins('gbI18nRoutePlugin');
+
+2.Edit your application *routing.yml* to use the gbI18nRoute on the route you would like i18n
+
+Example:
+
+    test:
+      class: gbI18nRoute
+      url:
+        en: /home
+        fr: /acceuil
+      param: { module: home, action: index }
+
+3.Edit your application *app.yml* to insure you have the lines bellow under the *.settings:* :
+    all:
+      .settigns:
+        culture_supported_list: [fr, en]
+
+## Test it!
+
+    http://www.example.org/home
+
+Will give you the *en* page of your module/action
+
+    http://www.example.org/acceuil
+
+Will give you the *fr* page of your module/action
+
+
