@@ -41,6 +41,7 @@ Example:
       param: { module: home, action: index }
 
 3.Edit your application *app.yml* to insure you have the lines bellow under the *.settings:* :
+
     all:
       .settigns:
         culture_supported_list: [fr, en]
@@ -55,4 +56,8 @@ Will give you the *en* page of your module/action
 
 Will give you the *fr* page of your module/action
 
+## TODO
 
+* Filter documentation
+* More internal documentation
+* By Domains management
