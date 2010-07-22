@@ -56,5 +56,22 @@
     </required>
   </dependencies>
   <phprelease></phprelease>
-  <changelog></changelog>
+  <changelog>
+    <release>
+      <version>
+        <release>0.1.0</release>
+        <api>0.1.0</api>
+      </version>
+      <stability>
+        <release>beta</release>
+        <api>beta</api>
+      </stability>
+      <date>2010-07-224</date>
+      <license uri="http://www.symfony-project.org/license">MIT license</license>
+      <notes>
+        * First release
+        * Need more documentations
+      </notes>
+    </release>
+  </changelog>
 </package>
