@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * gbI18nRoutePlugin configuration.
+ * 
+ * @package     gbI18nRoutePlugin
+ * @subpackage  config
+ * @author      Philippe Gamache <philippe.gamache@symfony-project.com>
+ * @author      Jean-Philippe Blais <jphblais@zinfo.ca>
+ * @version     SVN: $Id: PluginConfiguration.class.php 17207 2009-04-10 15:36:26Z Kris.Wallsmith $
+ */
+class gbI18nRoutePluginConfiguration extends sfPluginConfiguration
+{
+  const VERSION = '0.1.0-DEV';
+
+  /**
+   * @see sfPluginConfiguration
+   */
+  public function initialize()
+  {
+  }
+}
